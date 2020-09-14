@@ -1,6 +1,7 @@
 {
     "Danny Jacobs": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Analog", "pyuvsim/pyradiosky alternating",
+              "Commissioning", "pyuvdata", "Correlator", "Imaging (biweekly)"],
         "meetings":[],
         "available": [
             "Mon 15:00",
@@ -41,7 +42,7 @@
             "Thurs 16:30"]
     },
     "David DeBoer": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Analog", "Correlator", "Site"],
         "meetings": [
             "All-hands meeting",
             "Analog",
@@ -164,7 +165,8 @@
         ]
     },
     "Lindsay B": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Analog", "Commissioning", "Correlator",
+              "Imaging (biweekly)"],
         "meetings": [
             "Analog",
             "Commissioning",
@@ -390,7 +392,7 @@
         ]
     },
     "Matthew Kolopanis": {
-        "x": [],
+        "x": ["Pspec", "pyuvsim/pyradiosky alternating", "Commissioning", "Correlator", "pyuvdata", "Validation"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -500,7 +502,7 @@
         ]
     },
     "Adam Lanman": {
-        "x": [],
+        "x": ["pyuvsim/pyradiosky alternating"],
         "meetings": [],
         "available": [
             "Mon 7:00",
@@ -602,7 +604,7 @@
         ]
     },
     "Saurabh Singh": {
-        "x": [],
+        "x": ["Pspec"],
         "meetings": [
             "Pspec"
         ],
@@ -799,7 +801,7 @@
         ]
     },
     "Paul La Plante": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Correlator", "pyuvdata", "NRAO", "Machine learning"],
         "meetings": [
             "All-hands meeting",
             "Correlator",
@@ -902,7 +904,7 @@
         ]
     },
     "Bryna": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Pspec", "pyuvsim/pyradiosky alternating", "Commissioning", "pyuvdata", "Imaging (biweekly)"],
         "meetings": [
             "All-hands meeting",
             "Analog",
@@ -1005,7 +1007,7 @@
         ]
     },
     "Aaron Ewall-Wice": {
-        "x": [],
+        "x": ["Pspec", "Theory Meets Data"],
         "meetings": [
             "All-hands meeting",
             "Analog",
@@ -1101,7 +1103,7 @@
         ]
     },
     "Dara Storer": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Commissioining", "Imaging (biweekly)"],
         "meetings": [
             "All-hands meeting",
             "Analog",
@@ -1193,7 +1195,7 @@
         ]
     },
     "Nick Kern": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Pspec", "Validation", "Theory Meets Data"],
         "meetings": [],
         "available": [
             "Mon 7:00",
@@ -1355,7 +1357,7 @@
         ]
     },
     "Jacob Burba": {
-        "x": [],
+        "x": ["Validation"],
         "meetings": [
             "All-hands meeting",
             "Validation"
@@ -1435,7 +1437,7 @@
         ]
     },
     "Bobby Pascua": {
-        "x": [],
+        "x": ["Pspec", "Validation"],
         "meetings": [],
         "available": [
             "Mon 8:00",
@@ -1507,7 +1509,7 @@
         ]
     },
     "Scott Dynes": {
-        "x": [],
+        "x": ["Commissioning", "Site"],
         "meetings": [],
         "available": [
             "Mon 8:00",
@@ -1576,7 +1578,7 @@
         ]
     },
     "James Aguirre": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "NRAO", "Validation", "Machine learning"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -1652,7 +1654,7 @@
         ]
     },
     "Boom": {
-        "x": [],
+        "x": ["Validation"],
         "meetings": [],
         "available": [
             "Mon 7:00",
@@ -1718,7 +1720,7 @@
         ]
     },
     "Miguel": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Pspec", "Imaging (biweekly)"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -1789,7 +1791,7 @@
         ]
     },
     "Adrian Liu": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Pspec", "Maching learning", "Theory Meets Data"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -1857,7 +1859,7 @@
         ]
     },
     "Aaron Parsons": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Correlator"],
         "meetings": [
             "All-hands meeting",
             "Correlator",
@@ -1988,7 +1990,7 @@
         ]
     },
     "Nithya": {
-        "x": [],
+        "x": ["Pspec"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -2050,7 +2052,7 @@
         ]
     },
     "Andrei Mesinger": {
-        "x": [],
+        "x": ["Theory Meets Data"],
         "meetings": [
             "All-hands meeting",
             "Machine learning",
@@ -2108,7 +2110,7 @@
         ]
     },
     "Steven Furlanetto": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Theory Meets Data"],
         "meetings": [
             "All-hands meeting",
             "Theory Meets Data"
@@ -2218,7 +2220,7 @@
         ]
     },
     "Bharat Gehlot": {
-        "x": [],
+        "x": ["pyuvsim/pyradiosky alternating"],
         "meetings": [],
         "available": [
             "Mon 9:30",
@@ -2271,7 +2273,7 @@
         ]
     },
     "Philip Bull": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Pspec"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -2377,7 +2379,7 @@
         ]
     },
     "Brian Glendenning": {
-        "x": [],
+        "x": ["NRAO"],
         "meetings": [
             "All-hands meeting",
             "NRAO"
@@ -2461,7 +2463,7 @@
         ]
     },
     "Adam B": {
-        "x": [],
+        "x": ["pyuvdata"],
         "meetings": [],
         "available": [
             "Mon 11:00",
@@ -2493,7 +2495,7 @@
         ]
     },
     "Anastasia Fialkov": {
-        "x": [],
+        "x": ["Pspec", "Theory Meets Data"],
         "meetings": [
             "All-hands meeting",
             "Pspec",
@@ -2605,7 +2607,7 @@
         ]
     },
     "Steve Carey": {
-        "x": [],
+        "x": ["Analog"],
         "meetings": [],
         "available": [
             "Mon 7:00",
@@ -2627,7 +2629,7 @@
         ]
     },
     "Jonathan Pober": {
-        "x": [],
+        "x": ["pyuvsim/pyradiosky alternating", "pyuvdata", "Imaging (biweekly)"],
         "meetings": [
             "pyuvsim/pyradiosky alternating",
             "pyuvdata",
