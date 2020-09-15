@@ -1,7 +1,7 @@
 {
     "Josh Dillon": {
-        "x": [],
-        "meetings": [],
+        "x": ["All-hands meeting", "Pspec", "Commissioning", "Analysis/Quality Metrics alternating", "Validation"],
+        "meetings": ["All-hands meeting", "Pspec", "Commissioning", "Analysis/Quality Metrics alternating", "Validation"],
         "available": [
             "Mon 8:00",
             "Mon 8:30",
@@ -2671,7 +2671,7 @@
     },
     "Gianni Bernardi": {
         "x": [],
-        "meetings": [],
+        "meetings": ["All-hands meeting", "Pspec", "Theory Meets Data"],
         "available": [
             "Mon 7:00",
             "Mon 7:30",
