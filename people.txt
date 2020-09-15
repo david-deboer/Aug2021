@@ -7,6 +7,7 @@ Saurabh Singh
 Mike Wilensky
 Paul La Plante
 Bryna
+Josh Dillon
 Aaron Ewall-Wice
 Dara Storer
 Nick Kern
@@ -21,6 +22,7 @@ Adrian Liu
 Aaron Parsons
 Mario Santos
 Nithya
+James Robnett
 Andrei Mesinger
 Steven Furlanetto
 Stefan Heimersheim
