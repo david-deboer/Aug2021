@@ -1,7 +1,7 @@
 import mtgplan as mp
 # See list in mtgplan
 meeting = "All-hands meeting"
-print("GOTTA")
+print("GOTTA")  # This is from the googlesheet of meeting contributors
 print(', '.join(mp.all_essential[meeting]))
 mp.view(mp.essential[meeting])
 print("-------------------------------------------")

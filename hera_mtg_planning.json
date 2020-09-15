@@ -100,12 +100,8 @@
             "Thurs 16:30"]
     },
     "David DeBoer": {
-        "x": ["All-hands meeting", "Analog", "Correlator", "Site"],
-        "meetings": [
-            "All-hands meeting",
-            "Analog",
-            "Commissioning",
-            "Correlator"
+        "x": ["All-hands meeting", "Analog", "Commissioning", "Correlator", "Site"],
+        "meetings": ["All-hands meeting", "Analog","Commissioning", "Correlator", "Site"
         ],
         "available": [
             "Mon 7:00",
