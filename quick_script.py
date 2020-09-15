@@ -1,9 +1,13 @@
 import mtgplan as mp
+# See list in mtgplan
+meeting = "All-hands meeting"
 print("GOTTA")
-print(', '.join(mp.all_essential['All-hands meeting']))  
-mp.view(mp.essential['All-hands meeting'])
+print(', '.join(mp.all_essential[meeting]))
+mp.view(mp.essential[meeting])
+print("-------------------------------------------")
 print("SELF-SELECTED")
-print(', '.join(mp.all_mtg_by_mtg['All-hands meeting']))   
-mp.view(mp.mtg_by_mtg['All-hands meeting'])
+print(', '.join(mp.all_mtg_by_mtg[meeting]))
+mp.view(mp.mtg_by_mtg[meeting])
+print("-------------------------------------------")
 print("ALL")
 mp.view(mp.all_pop)
