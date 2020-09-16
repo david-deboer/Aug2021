@@ -10,6 +10,7 @@ meetings = ['All-hands meeting', 'Analog', 'Pspec', 'pyuvsim/pyradiosky alternat
 
 dow = {'Mon': '1', 'Tues': '2', 'Wed': '3', 'Thurs': '4', 'Fri': '5'}
 
+num_all = len(list(mtg.keys()))
 all_pop = {}
 mtg_by_mtg = {}
 all_mtg_by_mtg = {}
@@ -35,7 +36,7 @@ for pn in mtg.keys():
             essential[this_mtg][avail].append(pn)
 
 
-def view(this_one=mtg_by_mtg['All-hands meeting']):
+def view(this_one=mtg_by_mtg['All-hands meeting'], Nplan=-1, include_names=True, cull=0):
     ranked = {}
     for key, val in this_one.items():
         d, h = key.split()
@@ -45,4 +46,11 @@ def view(this_one=mtg_by_mtg['All-hands meeting']):
 
     for ordrk in sorted(list(ranked.keys()), reverse=True):
         n, _a, _b, sch = ordrk.split('_')
-        print('{} {:14s}  {}'.format(n, sch, ', '.join(ranked[ordrk])))
+        if int(n) < cull:
+            continue
+        if Nplan > 0:
+            print('{} / {:02d} {:14s}'.format(n, Nplan, sch))
+        else:
+            print('{} {:14s}'.format(n, sch))
+        if include_names:
+            print('  {}'.format(', '.join(ranked[ordrk])))
