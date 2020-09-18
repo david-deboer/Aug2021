@@ -16,3 +16,5 @@ print("-------------------------------------------")
 print("ALL (all from whenisgood)")
 show_down_to = 23  # cut-off number
 p = mp.view('pop', meeting, header=False, names=incl_names, show=show_down_to)
+
+print("writing results.csv")
