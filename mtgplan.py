@@ -9,7 +9,7 @@ with open('hera_mtg_planning.json', 'r') as fp:
 meetings = ['All-hands meeting', 'Analog', 'Pspec', 'pyuvsim/pyradiosky alternating',
             'Commissioning', 'Correlator', 'Site', 'pyuvdata', 'NRAO',
             'Analysis/Quality Metrics alternating', 'Imaging (biweekly)', 'Validation',
-            'Machine learning', 'Theory Meets Data']
+            'Machine learning', 'Theory Meets Data', 'Instrument Modeling']
 
 dow = {'Mon': '1', 'Tues': '2', 'Wed': '3', 'Thurs': '4', 'Fri': '5'}
 

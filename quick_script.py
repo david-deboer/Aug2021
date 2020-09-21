@@ -1,5 +1,7 @@
 import mtgplan as mp
-# See list in mtgplan
+
+print(mp.meetings)
+
 incl_names = 'not-present'  # vs 'present' or False
 meeting = "All-hands meeting"  # see meetings in mtgplan.py
 

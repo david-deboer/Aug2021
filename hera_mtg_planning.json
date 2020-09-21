@@ -1221,7 +1221,8 @@
             "Pspec",
             "Commissioning",
             "Analysis/Quality Metrics alternating",
-            "Theory Meets Data"
+            "Theory Meets Data",
+            "Instrument Modeling"
         ],
         "available": [
             "Mon 9:00",
@@ -1716,8 +1717,8 @@
         ]
     },
     "Scott Dynes": {
-        "x": ["Commissioning", "Site"],
-        "meetings": [],
+        "x": ["Commissioning", "Site", "Instrument Modeling"],
+        "meetings": ["Instrument Modeling"],
         "available": [
             "Mon 8:00",
             "Mon 8:30",
@@ -2536,11 +2537,12 @@
         ]
     },
     "Jackie Hewitt": {
-        "x": ["All-hands meeting"],
+        "x": ["All-hands meeting", "Instrument Modeling"],
         "meetings": [
             "All-hands meeting",
             "Commissioning",
-            "Analysis/Quality Metrics alternating"
+            "Analysis/Quality Metrics alternating",
+            "Instrument Modeling"
         ],
         "available": [
             "Mon 9:00",
