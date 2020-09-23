@@ -213,7 +213,8 @@
     "Danny Jacobs": {
         "x": ["All-hands meeting", "Analog", "pyuvsim/pyradiosky alternating",
               "Commissioning", "pyuvdata", "Correlator", "Imaging (biweekly)"],
-        "meetings":[],
+        "meetings":["All-hands meeting", "Analog", "pyuvsim/pyradiosky alternating",
+              "Commissioning", "pyuvdata", "Correlator", "Imaging (biweekly)", "Correlator"],
         "available": [
             "Mon 15:00",
             "Mon 15:30",
