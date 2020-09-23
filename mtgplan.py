@@ -1,20 +1,18 @@
 import json
+DOW = {'Mon': '1', 'Tues': '2', 'Wed': '3', 'Thurs': '4', 'Fri': '5'}
 
 
 class MeetingPlanner:
-    meetings = ['All-hands meeting', 'Analog', 'Pspec',
-                'pyuvsim/pyradiosky alternating', 'Commissioning', 'Correlator',
-                'Site', 'pyuvdata', 'NRAO', 'Analysis/Quality Metrics alternating',
-                'Imaging (biweekly)', 'Validation', 'Machine learning',
-                'Theory Meets Data', 'Instrument Modeling']
-    dow = {'Mon': '1', 'Tues': '2', 'Wed': '3', 'Thurs': '4', 'Fri': '5'}
-    all_mtypes = ['all', 'mtg', 'x']
 
-    def __init__(self, fn='hera_mtg_planning.json'):
+    def __init__(self, fn='hera_mtg_planning.json', info_fn="meeting_info.json"):
         self.fn = fn
-        for mtype in self.all_mtypes:
-            setattr(self, mtype, {})
-            setattr(self, 'all_{}'.format(mtype), {})
+        with open(info_fn, 'r') as fp:
+            info = json.load(fp)
+        for key, val in info.items():
+            setattr(self, key, val)
+        for group in self.groups:
+            setattr(self, group, {})
+            setattr(self, 'all_{}'.format(group), {})
         self.csv_fp = None
 
     def setup(self):
@@ -48,24 +46,24 @@ class MeetingPlanner:
             meeting = meeting.replace('-', '')
             self.mcsv = "{}.csv".format(meeting)
             self.csv_fp = open(self.mcsv, 'w')
-            print("mtype,meeting,available,total,day,hour,not-present", file=self.csv_fp)
+            print("group,meeting,available,total,day,hour,not-present", file=self.csv_fp)
         else:
             self.csv_fp.close()
             print("Writing {}".format(self.mcsv))
             self.csv_fp = None
 
-    def view(self, mtype='mtg', meeting='All-hands meeting',
+    def view(self, group='mtg', meeting='All-hands meeting',
              header=True, names='not-present', show=0, csv=True):
         if meeting not in self.meetings:
             raise ValueError("{} not valid meeting".format(meeting))
         ranked = {}
-        if mtype == 'all':
+        if group == 'all':
             this = self.all
             all = list(self.mtg_availability.keys())
         else:
-            this = getattr(self, mtype)[meeting]
-            all = getattr(self, 'all_'+mtype)[meeting]
-        hdr = "{}-{}:  {}".format(mtype, meeting, ', '.join(all))
+            this = getattr(self, group)[meeting]
+            all = getattr(self, 'all_'+group)[meeting]
+        hdr = "{}-{}:  {}".format(group, meeting, ', '.join(all))
         if names:
             hdr += '\n{}<{}>'.format(24*' ', names)
         if header:
@@ -73,16 +71,16 @@ class MeetingPlanner:
         for key, val in this.items():
             d, h = key.split()
             th = [int(x) for x in h.split(':')]
-            this_key = "{:02d}_{}_{:02d}:{:02d}_{}".format(len(val), self.dow[d], th[0], th[1], key)
+            this_key = "{:02d}_{}_{:02d}:{:02d}_{}".format(len(val), DOW[d], th[0], th[1], key)
             ranked[this_key] = val
         this_len = len(all)
         # if csv:
-        #     print('{},{},{},{}'.format(mtype, meeting, names, ','.join(all)), file=self.csv_fp)
+        #     print('{},{},{},{}'.format(group, meeting, names, ','.join(all)), file=self.csv_fp)
         for ordrk in sorted(list(ranked.keys()), reverse=True):
             n, _a, _b, sch = ordrk.split('_')
             if int(n) < show:
                 continue
-            csv_row = [mtype, meeting, n, this_len, sch.split()[0], sch.split()[1]]
+            csv_row = [group, meeting, n, this_len, sch.split()[0], sch.split()[1]]
             print('{} / {:02d} {:14s}'.format(n, this_len, sch), end='')
             if names == 'present':
                 print('  {}'.format(', '.join(ranked[ordrk])))

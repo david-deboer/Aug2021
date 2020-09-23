@@ -1,0 +1,8 @@
+{
+    "meetings": ["All-hands meeting", "Analog", "Pspec",
+                  "pyuvsim/pyradiosky alternating", "Commissioning", "Correlator",
+                  "Site", "pyuvdata", "NRAO", "Analysis/Quality Metrics alternating",
+                  "Imaging (biweekly)", "Validation", "Machine learning",
+                  "Theory Meets Data", "Instrument Modeling"],
+    "groups": ["x", "mtg", "all"]
+}
