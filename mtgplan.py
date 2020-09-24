@@ -7,35 +7,33 @@ class MeetingPlanner:
     def __init__(self, fn='hera_mtg_planning.json', info_fn="meeting_info.json"):
         self.fn = fn
         with open(info_fn, 'r') as fp:
-            info = json.load(fp)
-        for key, val in info.items():
-            setattr(self, key, val)
-        for group in self.groups:
-            setattr(self, group, {})
-            setattr(self, 'all_{}'.format(group), {})
+            self.info = json.load(fp)
+        self.meetings = {}
+        self.planner = {}
+        for mtg in self.info['meetings']:
+            self.meetings[mtg] = {}
+            self.planner[mtg] = {}
+            for grp in self.info['groups']:
+                self.meetings[mtg][grp] = []
+                self.planner[mtg][grp] = {}
         self.csv_fp = None
 
     def setup(self):
         with open(self.fn, 'r') as fp:
-            self.mtg_availability = json.load(fp)
-        for person in self.mtg_availability.keys():
-            for avail in self.mtg_availability[person]['available']:
-                self.all.setdefault(avail, [])
-                self.all[avail].append(person)
-            for this_mtg in self.mtg_availability[person]['meetings']:
-                self.all_mtg.setdefault(this_mtg, [])
-                self.all_mtg[this_mtg].append(person)
-                self.mtg.setdefault(this_mtg, {})
-                for avail in self.mtg_availability[person]['available']:
-                    self.mtg[this_mtg].setdefault(avail, [])
-                    self.mtg[this_mtg][avail].append(person)
-            for this_mtg in self.mtg_availability[person]['x']:
-                self.all_x.setdefault(this_mtg, [])
-                self.all_x[this_mtg].append(person)
-                self.x.setdefault(this_mtg, {})
-                for avail in self.mtg_availability[person]['available']:
-                    self.x[this_mtg].setdefault(avail, [])
-                    self.x[this_mtg][avail].append(person)
+            self.team = json.load(fp)
+        for person, mtg_info in self.team.items():
+            for mtg in self.info['meetings']:
+                for grp in self.info['groups']:
+                    if grp == 'all' or mtg in mtg_info[grp]:
+                        self.meetings[mtg][grp].append(person)
+        for mtg in self.info['meetings']:
+            for grp in self.info['groups']:
+                for person, mtg_info in self.team.items():
+                    person_in_mtggrp = person in self.meetings[mtg][grp]
+                    for available in mtg_info['available']:
+                        if person_in_mtggrp:
+                            self.planner[mtg][grp].setdefault(available, [])
+                            self.planner[mtg][grp][available].append(person)
 
     def reset_file(self, meeting):
         if self.csv_fp is None:
@@ -52,18 +50,14 @@ class MeetingPlanner:
             print("Writing {}".format(self.mcsv))
             self.csv_fp = None
 
-    def view(self, group='mtg', meeting='All-hands meeting',
+    def view(self, group='meetings', meeting='All-hands meeting',
              header=True, names='not-present', show=0, csv=True):
-        if meeting not in self.meetings:
+        if meeting not in self.info['meetings']:
             raise ValueError("{} not valid meeting".format(meeting))
+        if group not in self.info['groups']:
+            raise ValueError("{} not valid group".format(group))
         ranked = {}
-        if group == 'all':
-            this = self.all
-            all = list(self.mtg_availability.keys())
-        else:
-            this = getattr(self, group)[meeting]
-            all = getattr(self, 'all_'+group)[meeting]
-        hdr = "{}-{}:  {}".format(group, meeting, ', '.join(all))
+        hdr = "{}-{}:  {}".format(group, meeting, ', '.join(self.meetings[meeting][group]))
         if names:
             hdr += '\n{}<{}>'.format(24*' ', names)
         if header:

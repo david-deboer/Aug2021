@@ -4,5 +4,5 @@
                   "Site", "pyuvdata", "NRAO", "Analysis/Quality Metrics alternating",
                   "Imaging (biweekly)", "Validation", "Machine learning",
                   "Theory Meets Data", "Instrument Modeling"],
-    "groups": ["x", "mtg", "all"]
+    "groups": ["x", "meetings", "all"]
 }
