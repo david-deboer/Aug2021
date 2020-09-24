@@ -73,6 +73,7 @@ class MeetingPlanner:
             self.csv_fp = None
 
     def view(self, meeting, group, names_shown_as='not-present', csv=True):
+        print("-----------------Viewing {} for {}--------------".format(meeting, group))
         if meeting not in self.info['meetings']:
             raise ValueError("{} not valid meeting".format(meeting))
         if group not in self.info['groups']:
@@ -92,7 +93,8 @@ class MeetingPlanner:
             if csv:
                 print("{},{},{},{},{},{},{}".format(meeting, group,
                                                     this_time.split()[0], this_time.split()[1],
-                                                    len(available), len(full_group)), file=self.csv_fp)  # noqa
+                                                    len(available), len(full_group),
+                                                    ', '.join(names)), file=self.csv_fp)
 
 
 def get_name_list(this_list, full_list, names_shown_as):

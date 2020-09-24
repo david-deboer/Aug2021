@@ -29,7 +29,7 @@ else:
 for meeting in meeting_set:
     print(meeting)
     if args.csv:
-        mp.reset_file(meeting)
+        mp.handle_file(meeting)
 
     for group in args.groups:
         print(group_desc[group])
@@ -37,4 +37,4 @@ for meeting in meeting_set:
         print("-------------------------------------------")
 
     if args.csv:
-        mp.reset_file(meeting)
+        mp.handle_file(meeting)
