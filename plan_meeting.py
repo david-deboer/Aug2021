@@ -8,31 +8,40 @@ ap.add_argument('meeting', help="Name of meeting unless None which does all",
 ap.add_argument('--include-names', dest='incl_names', help="not-present or present",
                 default='not-present')
 ap.add_argument('--csv', help="Write csv file", action='store_true')
-ap.add_argument('--groups', help="groups to use", default="x,meetings,all")
+ap.add_argument('--groups', help="groups to use", default="convener,self,all")
+ap.add_argument('--show-meetings', dest='show_meetings', help="Just show meeting list.",
+                action='store_true')
+ap.add_argument('--show-groups', dest='show_groups', help="Just show groups.",
+                action='store_true')
 args = ap.parse_args()
 
 mp = mtgplan.MeetingPlanner()
-mp.setup()
-
-group_desc = {'x': "VIABLE (subjective; 'x' field in hera_mtg_planning.json)",
-              'meetings': "SELF-SELECTED (from googlesheet; 'meetings' in hera_mtg_planning.json)",
-              'all': "ALL (all from whenisgood)"}
-args.groups = args.groups.split(',')
 
 if args.meeting is None:
     meeting_set = mp.info['meetings']
 else:
     meeting_set = args.meeting.split(',')
+args.groups = args.groups.split(',')
+mp.setup()
 
-for meeting in meeting_set:
-    print(meeting)
-    if args.csv:
-        mp.handle_file(meeting)
+if args.show_meetings:
+    for mtg in meeting_set:
+        print(mtg)
+elif args.show_groups:
+    for mtg in meeting_set:
+        print("Groups for {}".format(mtg))
+        for grp in args.groups:
+            print("\t{}:  {}".format(grp, ', '.join(mp.meetings[mtg][grp])))
+else:
+    for mtg in meeting_set:
+        print(mtg)
+        if args.csv:
+            mp.handle_file(mtg)
 
-    for group in args.groups:
-        print(group_desc[group])
-        x = mp.view(meeting, group, names_shown_as=args.incl_names, csv=args.csv)
-        print("-------------------------------------------")
+        for group in args.groups:
+            print(mp.info['groups'][group])
+            x = mp.view(mtg, group, names_shown_as=args.incl_names, csv=args.csv)
+            print("-------------------------------------------")
 
-    if args.csv:
-        mp.handle_file(meeting)
+        if args.csv:
+            mp.handle_file(mtg)

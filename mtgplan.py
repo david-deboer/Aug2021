@@ -1,5 +1,5 @@
 import json
-DOW = {'Mon': '5', 'Tues': '4', 'Wed': '3', 'Thurs': '2', 'Fri': '1'}
+SDOW = {'Mon': '5', 'Tues': '4', 'Wed': '3', 'Thurs': '2', 'Fri': '1'}
 
 
 class MeetingPlanner:
@@ -17,7 +17,7 @@ class MeetingPlanner:
         for mtg in self.info['meetings']:
             self.meetings[mtg] = {}
             self.planner[mtg] = {}
-            for grp in self.info['groups']:
+            for grp in self.info['groups'].keys():
                 self.meetings[mtg][grp] = []
                 self.planner[mtg][grp] = {}
         self.csv_fp = None
@@ -34,11 +34,11 @@ class MeetingPlanner:
             self.team = json.load(fp)
         for person, mtg_info in self.team.items():
             for mtg in self.info['meetings']:
-                for grp in self.info['groups']:
+                for grp in self.info['groups'].keys():
                     if grp == 'all' or mtg in mtg_info[grp]:
                         self.meetings[mtg][grp].append(person)
         for mtg in self.info['meetings']:
-            for grp in self.info['groups']:
+            for grp in self.info['groups'].keys():
                 for person, mtg_info in self.team.items():
                     person_in_mtggrp = person in self.meetings[mtg][grp]
                     for available in mtg_info['available']:
@@ -47,12 +47,12 @@ class MeetingPlanner:
                             self.planner[mtg][grp][available].append(person)
         for mtg in self.info['meetings']:
             self.ranked[mtg] = {}
-            for grp in self.info['groups']:
+            for grp in self.info['groups'].keys():
                 self.ranked[mtg][grp] = {}
                 for available, p_list in self.planner[mtg][grp].items():
                     dn, tm = available.split()
-                    hr, mn = [99-int(x) for x in tm.split(':')]  # the 99/DOW are for reverse sort
-                    key = "{:03d}-{}-{:02d}-{:02d}".format(len(p_list), DOW[dn], hr, mn)
+                    hr, mn = [99-int(x) for x in tm.split(':')]  # the 99/SDOW are for reverse sort
+                    key = "{:03d}-{}-{:02d}-{:02d}".format(len(p_list), SDOW[dn], hr, mn)
                     self.ranked[mtg][grp][key] = available
 
     def handle_file(self, meeting):
@@ -77,7 +77,7 @@ class MeetingPlanner:
               .format(meeting, group, names_shown_as))
         if meeting not in self.info['meetings']:
             raise ValueError("{} not valid meeting".format(meeting))
-        if group not in self.info['groups']:
+        if group not in self.info['groups'].keys():
             raise ValueError("{} not valid group".format(meeting))
         if csv and self.csv_fp is None:
             print("No csv file open - not writing")
@@ -95,14 +95,22 @@ class MeetingPlanner:
                 print("{},{},{},{},{},{},{}".format(meeting, group,
                                                     this_time.split()[0], this_time.split()[1],
                                                     len(available), len(full_group),
-                                                    ', '.join(names)), file=self.csv_fp)
+                                                    ','.join(names)), file=self.csv_fp)
 
 
-def get_name_list(this_list, full_list, names_shown_as):
-    if names_shown_as == 'present':
-        return this_list
+def get_name_list(this_list, full_list, names_shown_as, truncate=12):
     names_list = []
+    i = 0
     for nm in full_list:
-        if nm not in this_list:
-            names_list.append(nm)
+        if i > truncate:
+            names_list.append('.....')
+            break
+        if nm in this_list:
+            if names_shown_as == 'present':
+                names_list.append(nm)
+                i += 1
+        else:
+            if names_shown_as == 'not-present':
+                names_list.append(nm)
+                i += 1
     return names_list

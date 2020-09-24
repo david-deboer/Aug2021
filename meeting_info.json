@@ -4,5 +4,10 @@
                   "Site", "pyuvdata", "NRAO", "Analysis/Quality Metrics alternating",
                   "Imaging (biweekly)", "Validation", "Machine learning",
                   "Theory Meets Data", "Instrument Modeling"],
-    "groups": ["x", "meetings", "all"]
+    "groups":
+    {
+        "convener": "CONVENER-SELECTED (taken++ from googlesheet)",
+        "self": "SELF-SELECTED (taken from google form)",
+        "all": "ALL (all from whenisgood)"
+    }
 }
