@@ -72,9 +72,9 @@ class MeetingPlanner:
             print("Writing {}".format(self.mcsv))
             self.csv_fp = None
 
-    def view(self, meeting, group, names_shown_as='not-present', csv=True):
+    def view(self, meeting, group, attendee_display='not-present', csv=True):
         print("-----------------Viewing {} for {}.  Include names {}--------------"
-              .format(meeting, group, names_shown_as))
+              .format(meeting, group, attendee_display))
         if meeting not in self.info['meetings']:
             raise ValueError("{} not valid meeting".format(meeting))
         if group not in self.info['groups'].keys():
@@ -89,7 +89,7 @@ class MeetingPlanner:
             available = self.planner[meeting][group][this_time]
             _x = "{:>3s} /{:>3s}".format(str(len(available)), str(len(full_group)))
             _t = "{:5s} {:>5s}".format(this_time.split()[0], this_time.split()[1])
-            names = get_name_list(available, full_group, names_shown_as)
+            names = get_name_list(available, full_group, attendee_display)
             print('{}  {:8s}  {}'.format(_t, _x, ', '.join(names)))
             if csv:
                 print("{},{},{},{},{},{},{}".format(meeting, group,
@@ -98,7 +98,7 @@ class MeetingPlanner:
                                                     ','.join(names)), file=self.csv_fp)
 
 
-def get_name_list(this_list, full_list, names_shown_as, truncate=12):
+def get_name_list(this_list, full_list, attendee_display, truncate=12):
     names_list = []
     i = 0
     for nm in full_list:
@@ -106,11 +106,11 @@ def get_name_list(this_list, full_list, names_shown_as, truncate=12):
             names_list.append('.....')
             break
         if nm in this_list:
-            if names_shown_as == 'present':
+            if attendee_display == 'present':
                 names_list.append(nm)
                 i += 1
         else:
-            if names_shown_as == 'not-present':
+            if attendee_display == 'not-present':
                 names_list.append(nm)
                 i += 1
     return names_list

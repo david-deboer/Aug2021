@@ -3,16 +3,17 @@ import mtgplan
 import argparse
 
 ap = argparse.ArgumentParser()
-ap.add_argument('meeting', help="Name of meeting unless None which does all",
+ap.add_argument('meeting', help="Name of meeting (optional). If not included, will use all.",
                 nargs='?', default=None)
-ap.add_argument('--include-names', dest='incl_names', help="not-present or present",
-                default='not-present')
-ap.add_argument('--csv', help="Write csv file", action='store_true')
-ap.add_argument('--groups', help="groups to use", default="convener,self,all")
-ap.add_argument('--show-meetings', dest='show_meetings', help="Just show meeting list.",
+ap.add_argument('-g', '--groups', help="groups to use", default="convener,self,all")
+ap.add_argument('--csv', help="Flag to write csv file(s) for selected meetings.",
                 action='store_true')
-ap.add_argument('--show-groups', dest='show_groups', help="Just show groups.",
+ap.add_argument('--attendee-display', dest='attendee_display', help="attendee status to display",
+                choices=['present', 'not-present'], default='not-present')
+ap.add_argument('--show-meetings', dest='show_meetings', help="Just show meeting list and exit.",
                 action='store_true')
+ap.add_argument('--show-groups', dest='show_groups', help="Just show groups lists for "
+                "selected meetings and exit.", action='store_true')
 args = ap.parse_args()
 
 mp = mtgplan.MeetingPlanner()
@@ -40,7 +41,7 @@ else:
 
         for group in args.groups:
             print(mp.info['groups'][group])
-            x = mp.view(mtg, group, names_shown_as=args.incl_names, csv=args.csv)
+            x = mp.view(mtg, group, attendee_display=args.attendee_display, csv=args.csv)
             print("-------------------------------------------")
 
         if args.csv:
