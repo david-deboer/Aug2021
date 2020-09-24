@@ -3,17 +3,21 @@ import json
 import matplotlib.image as mpimg
 import pandas as pd
 
-
-responses_file = pd.read_csv('MeetingResponses.csv')
-responses = {}
-for i, name in enumerate(responses_file['Name']):
-    responses[name] = responses_file.iloc[i]
 meetings = ['All-hands meeting', 'Analog', 'Pspec', 'pyuvsim/pyradiosky alternating',
             'Commissioning', 'Correlator', 'Site', 'pyuvdata', 'NRAO',
             'Analysis/Quality Metrics alternating', 'Imaging (biweekly)', 'Validation',
             'Machine learning', 'Theory Meets Data']
 
-available_color = 1.737255
+with open('polls/whenisgood.json', 'r') as fp:
+    whenisgood = json.load(fp, indent=4)
+
+# This is the self-select meeting attendence form
+selfpoll_file = pd.read_csv('polls/MeetingResponses.csv')
+selfpoll = {}
+for i, name in enumerate(selfpoll_file['Name']):
+    selfpoll[name] = selfpoll_file.iloc[i]
+
+available_color = 1.737255  # This is the value of the color that indicates availability
 days = {
          1618: 'Mon',
          1768: 'Tues',
@@ -50,32 +54,19 @@ hours = {
 _days = sorted(list(days.keys()))
 _hours = sorted(list(hours.keys()))
 
-# Make screen shot file to person dictionary
-ssfiles = []
-with open('ssfiles.txt', 'r') as fp:
-    for line in fp:
-        ssfiles.append(line.strip())
-ssfiles = sorted(ssfiles)
-people = []
-with open('people.txt', 'r') as fp:
-    for line in fp:
-        people.append(line.strip())
-files = {}
-for fn, pn in zip(ssfiles, people):
-    files[fn] = pn
-
-# Check people
-for pn in people:
-    if pn not in responses.keys():
+# Check people in both polls
+for pn in whenisgood.values():
+    if pn not in selfpoll.keys():
         print("{} not in responses".format(pn))
-for pn in responses.keys():
-    if pn not in people:
+for pn in selfpoll.keys():
+    if pn not in whenisgood.values():
         print("{} not in responses".format(pn))
 
 # Step through grid in images
 testing = False
 if testing:
-    img = mpimg.imread(ssfiles[0])
+    pick_one = list(whenisgood.keys())[1]
+    img = mpimg.imread(pick_one)
     for h in _hours:
         for d in _days:
             clr = img[h, d]
@@ -86,13 +77,13 @@ if testing:
 else:
     mtg_data = {}
     full_responses = {}
-    for fn, pn in files.items():
+    for fn, pn in whenisgood.items():
         mtg_list = []
         for mtg in meetings:
-            if pn in responses.keys():
-                if responses[pn][mtg] == 'Yes':
+            if pn in selfpoll.keys():
+                if selfpoll[pn][mtg] == 'Yes':
                     mtg_list.append(mtg)
-        full_responses[pn] = {'meetings': mtg_list, 'available': []}
+        full_responses[pn] = {'convener': [], 'self': mtg_list, 'available': []}
         img = mpimg.imread(fn)
         for d in _days:
             for h in _hours:
