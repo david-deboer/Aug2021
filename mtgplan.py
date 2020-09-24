@@ -73,7 +73,8 @@ class MeetingPlanner:
             self.csv_fp = None
 
     def view(self, meeting, group, names_shown_as='not-present', csv=True):
-        print("-----------------Viewing {} for {}--------------".format(meeting, group))
+        print("-----------------Viewing {} for {}.  Include names {}--------------"
+              .format(meeting, group, names_shown_as))
         if meeting not in self.info['meetings']:
             raise ValueError("{} not valid meeting".format(meeting))
         if group not in self.info['groups']:

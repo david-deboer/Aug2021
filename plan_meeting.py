@@ -13,8 +13,6 @@ args = ap.parse_args()
 
 mp = mtgplan.MeetingPlanner()
 mp.setup()
-print("=====================================================")
-print("=====================================================")
 
 group_desc = {'x': "VIABLE (subjective; 'x' field in hera_mtg_planning.json)",
               'meetings': "SELF-SELECTED (from googlesheet; 'meetings' in hera_mtg_planning.json)",
