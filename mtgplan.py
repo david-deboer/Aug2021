@@ -4,13 +4,25 @@ SDOW = {'Mon': '5', 'Tues': '4', 'Wed': '3', 'Thurs': '2', 'Fri': '1'}
 
 class MeetingPlanner:
 
-    def __init__(self, fn='hera_mtg_planning.json', info_fn="meeting_info.json"):
+    def __init__(self,
+                 fntimes='hera_mtg_times.json',  # People and available meeting times
+                 fnattend='hera_mtg_attend.json',  # People and desired attendance
+                 fninfo="meeting_info.json"):  # Overall meeting info
         """
-        Reads info and sets up empty dictionaries
+        Read info and set up empty dictionaries.
         """
-        self.fn = fn
-        with open(info_fn, 'r') as fp:
+        with open(fninfo, 'r') as fp:
             self.info = json.load(fp)
+        with open(fnattend, 'r') as fp:
+            self.team = json.load(fp)
+        for k in self.team.keys():
+            self.team[k]['available'] = []
+        with open(fntimes, 'r') as fp:
+            ttmp = json.load(fp)
+        for k, v in ttmp.items():
+            self.team.setdefault(k, {'convener': [], 'self': []})
+            self.team[k]['available'] = v
+
         self.meetings = {}
         self.planner = {}
         self.ranked = {}
@@ -30,8 +42,6 @@ class MeetingPlanner:
             self.planner
             self.ranked
         """
-        with open(self.fn, 'r') as fp:
-            self.team = json.load(fp)
         for person, mtg_info in self.team.items():
             for mtg in self.info['meetings']:
                 for grp in self.info['groups'].keys():

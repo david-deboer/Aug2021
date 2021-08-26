@@ -1,9 +1,87 @@
 {
-    "meetings": ["All-hands meeting", "Analog", "Pspec",
-                  "pyuvsim/pyradiosky alternating", "Commissioning", "Correlator",
-                  "Site", "pyuvdata", "NRAO", "Analysis/Quality Metrics alternating",
-                  "Imaging (biweekly)", "Validation", "Machine learning",
-                  "Theory Meets Data", "Instrument Modeling"],
+    "meetings":
+    {
+        "All-hands meeting":
+        {
+            "20-21": "Thurs 8am",
+            "21-22": ""
+        },
+        "Analog/EMAG alternating":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Pspec":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "pyuvsim/pyradiosky alternating":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Commissioning":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Correlator":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Site":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "pyuvdata":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "NRAO":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Analysis/Quality Metrics alternating":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Imaging (biweekly)":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Validation":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Machine learning":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Theory Meets Data/Cross-correlation alternating":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Software":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Datacon":
+        {
+            "20-21": "",
+            "21-22": ""
+        }
+    },
     "groups":
     {
         "convener": "CONVENER-SELECTED (taken++ from googlesheet)",
