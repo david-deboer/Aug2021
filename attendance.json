@@ -1,0 +1,441 @@
+{
+    "Fake Person": {
+        "convener": ["Pspec"],
+        "self": ["Site"]
+    },
+    "Josh Dillon": {
+        "convener": [
+            "All-hands meeting",
+            "Pspec",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating",
+            "Validation",
+            "Software"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating",
+            "Validation"
+        ]
+    },
+    "Danny Jacobs": {
+        "convener": [
+            "All-hands meeting",
+            "Analog",
+            "pyuvsim/pyradiosky alternating",
+            "Commissioning",
+            "pyuvdata",
+            "Correlator",
+            "Imaging (biweekly)"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Analog",
+            "pyuvsim/pyradiosky alternating",
+            "Commissioning",
+            "pyuvdata",
+            "Correlator",
+            "Imaging (biweekly)",
+            "Correlator"
+        ]
+    },
+    "David DeBoer": {
+        "convener": [
+            "All-hands meeting",
+            "Analog",
+            "Commissioning",
+            "Correlator",
+            "Site",
+            "Software"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Analog",
+            "Commissioning",
+            "Correlator",
+            "Site"
+        ]
+    },
+    "Lindsay B": {
+        "convener": [
+            "All-hands meeting",
+            "Analog",
+            "Commissioning",
+            "Imaging (biweekly)",
+            "Software"
+        ],
+        "self": [
+            "Analog",
+            "Commissioning",
+            "Imaging (biweekly)"
+        ]
+    },
+    "Zhilei Xu": {
+        "convener": [],
+        "self": [
+            "All-hands meeting",
+            "Analog",
+            "Analysis/Quality Metrics alternating",
+            "Imaging (biweekly)"
+        ]
+    },
+    "Matthew Kolopanis": {
+        "convener": [
+            "Pspec",
+            "pyuvsim/pyradiosky alternating",
+            "Commissioning",
+            "Correlator",
+            "pyuvdata",
+            "Validation",
+            "Software"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "pyuvsim/pyradiosky alternating",
+            "Commissioning",
+            "Correlator",
+            "pyuvdata",
+            "Validation"
+        ]
+    },
+    "Adam Lanman": {
+        "convener": [
+            "pyuvsim/pyradiosky alternating"
+        ],
+        "self": []
+    },
+    "Saurabh Singh": {
+        "convener": [
+            "Pspec"
+        ],
+        "self": [
+            "Pspec"
+        ]
+    },
+    "Mike Wilensky": {
+        "convener": [],
+        "self": []
+    },
+    "Paul La Plante": {
+        "convener": [
+            "All-hands meeting",
+            "Correlator",
+            "pyuvdata",
+            "NRAO",
+            "Machine learning",
+            "Software"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Correlator",
+            "pyuvdata",
+            "NRAO",
+            "Machine learning",
+            "Theory Meets Data"
+        ]
+    },
+    "Bryna": {
+        "convener": [
+            "All-hands meeting",
+            "Pspec",
+            "pyuvsim/pyradiosky alternating",
+            "Commissioning",
+            "Correlator",
+            "pyuvdata",
+            "Imaging (biweekly)",
+            "Software"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Analog",
+            "Pspec",
+            "pyuvsim/pyradiosky alternating",
+            "Commissioning",
+            "Correlator",
+            "pyuvdata",
+            "Imaging (biweekly)"
+        ]
+    },
+    "Aaron Ewall-Wice": {
+        "convener": [
+            "Pspec",
+            "Theory Meets Data"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Analog",
+            "Pspec",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating",
+            "Theory Meets Data",
+            "Instrument Modeling"
+        ]
+    },
+    "Dara Storer": {
+        "convener": [
+            "All-hands meeting",
+            "Commissioning",
+            "Imaging (biweekly)"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Analog",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating"
+        ]
+    },
+    "Nick Kern": {
+        "convener": [
+            "All-hands meeting",
+            "Pspec",
+            "Validation",
+            "Theory Meets Data"
+        ],
+        "self": []
+    },
+    "Peter Sims": {
+        "convener": [],
+        "self": []
+    },
+    "Jacob Burba": {
+        "convener": [
+            "Validation",
+            "Software"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Validation"
+        ]
+    },
+    "Bobby Pascua": {
+        "convener": [
+            "Pspec",
+            "Validation"
+        ],
+        "self": []
+    },
+    "Scott Dynes": {
+        "convener": [
+            "Commissioning",
+            "Site",
+            "Instrument Modeling"
+        ],
+        "self": [
+            "Instrument Modeling"
+        ]
+    },
+    "James Aguirre": {
+        "convener": [
+            "All-hands meeting",
+            "NRAO",
+            "Validation",
+            "Machine learning"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "pyuvsim/pyradiosky alternating",
+            "NRAO",
+            "Imaging (biweekly)",
+            "Validation",
+            "Machine learning"
+        ]
+    },
+    "Boom": {
+        "convener": [
+            "Validation",
+            "Software"
+        ],
+        "self": []
+    },
+    "Miguel": {
+        "convener": [
+            "All-hands meeting",
+            "Pspec",
+            "Imaging (biweekly)"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating",
+            "Imaging (biweekly)"
+        ]
+    },
+    "Adrian Liu": {
+        "convener": [
+            "All-hands meeting",
+            "Pspec",
+            "Maching learning",
+            "Theory Meets Data"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Machine learning",
+            "Theory Meets Data"
+        ]
+    },
+    "Aaron Parsons": {
+        "convener": [
+            "All-hands meeting",
+            "Correlator"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Correlator",
+            "Analysis/Quality Metrics alternating",
+            "Validation"
+        ]
+    },
+    "Mario Santos": {
+        "convener": [
+            "All-hands meeting"
+        ],
+        "self": [
+            "All-hands meeting"
+        ]
+    },
+    "Nithya": {
+        "convener": [
+            "Pspec"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Imaging (biweekly)"
+        ]
+    },
+    "Andrei Mesinger": {
+        "convener": [
+            "Theory Meets Data"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Machine learning",
+            "Theory Meets Data"
+        ]
+    },
+    "Steven Furlanetto": {
+        "convener": [
+            "All-hands meeting",
+            "Theory Meets Data"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Theory Meets Data"
+        ]
+    },
+    "Stefan Heimersheim": {
+        "convener": [],
+        "self": []
+    },
+    "Bharat Gehlot": {
+        "convener": [
+            "pyuvsim/pyradiosky alternating"
+        ],
+        "self": []
+    },
+    "Philip Bull": {
+        "convener": [
+            "All-hands meeting",
+            "Pspec"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Analysis/Quality Metrics alternating",
+            "Validation"
+        ]
+    },
+    "Jackie Hewitt": {
+        "convener": [
+            "All-hands meeting",
+            "Instrument Modeling"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating",
+            "Instrument Modeling"
+        ]
+    },
+    "Brian Glendenning": {
+        "convener": [
+            "NRAO"
+        ],
+        "self": [
+            "All-hands meeting",
+            "NRAO"
+        ]
+    },
+    "Judd": {
+        "convener": [],
+        "self": [
+            "All-hands meeting"
+        ]
+    },
+    "Adam B": {
+        "convener": [
+            "pyuvdata"
+        ],
+        "self": []
+    },
+    "Anastasia Fialkov": {
+        "convener": [
+            "Pspec",
+            "Theory Meets Data"
+        ],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Theory Meets Data"
+        ]
+    },
+    "Gianni Bernardi": {
+        "convener": [],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Theory Meets Data"
+        ]
+    },
+    "Yin-Zhe Ma": {
+        "convener": [],
+        "self": [
+            "All-hands meeting",
+            "Pspec",
+            "Theory Meets Data"
+        ]
+    },
+    "Wei-Ming Dai": {
+        "convener": [],
+        "self": []
+    },
+    "Steve Carey": {
+        "convener": [
+            "Analog"
+        ],
+        "self": []
+    },
+    "Jonathan Pober": {
+        "convener": [
+            "pyuvsim/pyradiosky alternating",
+            "pyuvdata",
+            "Imaging (biweekly)"
+        ],
+        "self": [
+            "pyuvsim/pyradiosky alternating",
+            "pyuvdata",
+            "Imaging (biweekly)",
+            "Machine learning"
+        ]
+    },
+    "Mthokozisi": {
+        "convener": [],
+        "self": []
+    }
+}
