@@ -908,7 +908,7 @@
             "Thurs 18:30"
         ]
     },
-    "Plante": {
+    "LaPlante": {
         "convener": [],
         "regular": [
             "All-hands meeting",
@@ -2737,7 +2737,7 @@
             "Fri 08:00"
         ]
     },
-    "Acedo": {
+    "deLeraAcedo": {
         "convener": [],
         "regular": [
             "All-hands meeting",
