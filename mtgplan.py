@@ -14,6 +14,9 @@ class MeetingPlanner:
             self.info = json.load(fp)
         with open(fnresponses, 'r') as fp:
             self.team = json.load(fp)
+        # Combine occasional = regular + occasional
+        for pn, info in self.team.items():
+            info['occasional'] += info['regular']
 
         self.meetings = {}
         self.planner = {}
@@ -74,12 +77,12 @@ class MeetingPlanner:
             self.csv_fp = None
 
     def view(self, meeting, group, attendee_display='not-present', csv=True):
-        print("-----------------Viewing {} for {}.  Include names {}--------------"
+        print("-----------------Viewing {} for {}.  Include names '{}'--------------"
               .format(meeting, group, attendee_display))
         if meeting not in self.info['meetings']:
             raise ValueError("{} not valid meeting".format(meeting))
         if group not in self.info['groups'].keys():
-            raise ValueError("{} not valid group".format(meeting))
+            raise ValueError("{} not valid group".format(group))
         if csv and self.csv_fp is None:
             print("No csv file open - not writing")
             csv = False

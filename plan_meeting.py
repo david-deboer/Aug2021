@@ -3,9 +3,8 @@ import mtgplan
 import argparse
 
 ap = argparse.ArgumentParser()
-ap.add_argument('meeting', help="Name of meeting (optional). If not included, will use all.",
-                nargs='?', default=None)
-ap.add_argument('-g', '--groups', help="groups to use", default="convener,self,all")
+ap.add_argument('meeting', nargs='?', help="Name of meeting.")
+ap.add_argument('-g', '--groups', help="groups to use", default="regular,occasional")
 ap.add_argument('--csv', help="Flag to write csv file(s) for selected meetings.",
                 action='store_true')
 ap.add_argument('--attendee-display', dest='attendee_display', help="attendee status to display",
