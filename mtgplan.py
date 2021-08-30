@@ -5,23 +5,15 @@ SDOW = {'Mon': '5', 'Tues': '4', 'Wed': '3', 'Thurs': '2', 'Fri': '1'}
 class MeetingPlanner:
 
     def __init__(self,
-                 fntimes='hera_mtg_times.json',  # People and available meeting times
-                 fnattend='hera_mtg_attend.json',  # People and desired attendance
-                 fninfo="meeting_info.json"):  # Overall meeting info
+                 fnresponses='full_responses.json',  # Info from both polls
+                 fninfo="meetings.json"):  # Overall meeting info
         """
         Read info and set up empty dictionaries.
         """
         with open(fninfo, 'r') as fp:
             self.info = json.load(fp)
-        with open(fnattend, 'r') as fp:
+        with open(fnresponses, 'r') as fp:
             self.team = json.load(fp)
-        for k in self.team.keys():
-            self.team[k]['available'] = []
-        with open(fntimes, 'r') as fp:
-            ttmp = json.load(fp)
-        for k, v in ttmp.items():
-            self.team.setdefault(k, {'convener': [], 'self': []})
-            self.team[k]['available'] = v
 
         self.meetings = {}
         self.planner = {}
@@ -36,8 +28,7 @@ class MeetingPlanner:
 
     def setup(self):
         """
-        Produces the following class nested dictionaries:
-            self.team
+        Populates the following class nested dictionaries:
             self.meetings
             self.planner
             self.ranked

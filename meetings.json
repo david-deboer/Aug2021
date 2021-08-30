@@ -7,7 +7,12 @@
             "20-21": "Thurs 8am",
             "21-22": ""
         },
-        "Analog/EMAG alternating":
+        "Analog":
+        {
+            "20-21": "",
+            "21-22": ""
+        },
+        "Instrument":
         {
             "20-21": "",
             "21-22": ""
@@ -86,7 +91,8 @@
     "groups":
     {
         "convener": "CONVENER-SELECTED (taken++ from googlesheet)",
-        "self": "SELF-SELECTED (taken from google form)",
-        "all": "ALL (all from whenisgood)"
+        "regular": "SELF-SELECTED (taken from google form)",
+        "occasional": "  ",
+        "available": "ALL (all from whenisgood)"
     }
 }
