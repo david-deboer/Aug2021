@@ -24,12 +24,12 @@ optional arguments:
   --show-groups         Just show groups lists for selected meetings and exit.
 
 Note that the following folks didn't complete both, so some data are missing.
+    Ewall-Wice not in google poll
     Parsons not in google poll
     Morales not in google poll
     Dai not in google poll
     Nhan not in whenisgood
     Robnett not in whenisgood
-    Storer not in whenisgood
     Kim not in whenisgood
     Kocz not in whenisgood
     Garsden not in whenisgood

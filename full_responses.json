@@ -4,31 +4,29 @@
         "regular": [
             "Analog",
             "Commissioning",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
+            "Imaging",
             "Datacon"
         ],
         "occasional": [
-            "All-hands meeting"
+            "All-hands",
+            "pyuvsim/pyradiosky"
         ],
         "available": [
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -78,11 +76,9 @@
         "available": [
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Mon 10:00",
             "Tues 10:00",
@@ -139,9 +135,9 @@
         ]
     },
     "DeBoer": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Analog",
             "Commissioning",
             "Correlator",
@@ -156,22 +152,18 @@
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
@@ -266,7 +258,8 @@
     "Mirocha": {
         "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands",
+            "Theory/Cross"
         ],
         "occasional": [
             "Datacon"
@@ -274,29 +267,23 @@
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -382,26 +369,22 @@
             "Pspec"
         ],
         "occasional": [
-            "All-hands meeting"
+            "All-hands"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
@@ -490,13 +473,13 @@
     "Pascua": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Validation",
             "Datacon"
         ],
         "occasional": [
             "Pspec",
-            "Analysis/Quality Metrics alternating"
+            "Analysis/Quality"
         ],
         "available": [
             "Tues 07:00",
@@ -509,12 +492,10 @@
             "Thurs 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -599,37 +580,34 @@
         ]
     },
     "Dillon": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
             "Commissioning",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
             "Validation",
+            "Theory/Cross",
             "Datacon"
         ],
         "occasional": [
             "Correlator",
-            "Machine learning",
+            "Machine",
             "Software"
         ],
         "available": [
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -712,48 +690,44 @@
         ]
     },
     "Hewitt": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Commissioning",
             "Site",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
             "Instrument",
             "Datacon"
         ],
         "occasional": [
             "Analog",
-            "Pspec"
+            "Pspec",
+            "Imaging",
+            "Theory/Cross"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -825,30 +799,24 @@
     "Sims": {
         "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands"
         ],
         "occasional": [],
         "available": [
             "Tues 07:00",
-            "Wed 07:00",
             "Fri 07:00",
             "Tues 07:30",
-            "Wed 07:30",
             "Fri 07:30",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Tues 09:00",
-            "Wed 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Fri 09:30",
             "Mon 10:00",
             "Tues 10:00",
@@ -923,8 +891,9 @@
     "Kolopanis": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
+            "pyuvsim/pyradiosky",
             "Commissioning",
             "Correlator",
             "pyuvdata",
@@ -932,36 +901,32 @@
             "Software",
             "Datacon"
         ],
-        "occasional": [],
+        "occasional": [
+            "Theory/Cross"
+        ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -1025,13 +990,14 @@
         ]
     },
     "LaPlante": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Correlator",
             "pyuvdata",
             "NRAO",
-            "Machine learning",
+            "Machine",
+            "Theory/Cross",
             "Software",
             "Datacon"
         ],
@@ -1039,22 +1005,18 @@
         "available": [
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Tues 10:00",
@@ -1121,37 +1083,36 @@
         ]
     },
     "Hazelton": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Analog",
             "Pspec",
+            "pyuvsim/pyradiosky",
             "Commissioning",
             "pyuvdata",
+            "Imaging",
             "Software",
             "Datacon"
         ],
         "occasional": [
-            "Correlator"
+            "Correlator",
+            "Theory/Cross"
         ],
         "available": [
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Fri 09:30",
             "Mon 10:00",
             "Tues 10:00",
@@ -1220,39 +1181,33 @@
     "Burba": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Validation"
         ],
         "occasional": [],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -1308,11 +1263,12 @@
         ]
     },
     "Liu": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
-            "Machine learning",
+            "Machine",
+            "Theory/Cross",
             "Datacon"
         ],
         "occasional": [
@@ -1334,7 +1290,6 @@
             "Thurs 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Mon 10:00",
             "Tues 10:00",
@@ -1399,46 +1354,42 @@
     "Tan": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
-            "Machine learning",
+            "Machine",
+            "Theory/Cross",
             "Datacon"
         ],
         "occasional": [
             "pyuvdata",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
+            "Imaging",
             "Validation",
             "Instrument"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -1491,12 +1442,15 @@
     "Xu": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
-            "Analysis/Quality Metrics alternating"
+            "Analysis/Quality",
+            "Imaging"
         ],
         "occasional": [
+            "pyuvsim/pyradiosky",
             "Commissioning",
+            "Theory/Cross",
             "Instrument",
             "Datacon"
         ],
@@ -1511,19 +1465,15 @@
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
-            "Wed 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Fri 09:30",
             "Tues 10:00",
             "Wed 10:00",
@@ -1576,16 +1526,13 @@
         ]
     },
     "Parsons": {
-        "convener": ["All-hands meeting"],
         "available": [
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -1654,39 +1601,34 @@
     "Gorce": {
         "convener": [],
         "regular": [
-            "Pspec"
+            "Pspec",
+            "Theory/Cross"
         ],
         "occasional": [
-            "All-hands meeting",
+            "All-hands",
             "Validation",
             "Datacon"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Mon 10:00",
             "Tues 10:00",
@@ -1729,9 +1671,10 @@
         ]
     },
     "Santos": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands",
+            "Theory/Cross"
         ],
         "occasional": [
             "Pspec",
@@ -1742,32 +1685,26 @@
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -1803,46 +1740,43 @@
         ]
     },
     "Aguirre": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
+            "pyuvsim/pyradiosky",
             "NRAO",
             "Validation",
-            "Machine learning",
+            "Machine",
+            "Theory/Cross",
             "Datacon"
         ],
         "occasional": [
             "Pspec",
             "Commissioning",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
+            "Imaging",
             "Instrument"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Mon 10:00",
             "Tues 10:00",
@@ -1875,9 +1809,10 @@
         ]
     },
     "Furlanetto": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands",
+            "Theory/Cross"
         ],
         "occasional": [
             "Datacon"
@@ -1893,7 +1828,6 @@
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -1941,7 +1875,7 @@
     "Glendenning": {
         "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands"
         ],
         "occasional": [
             "NRAO"
@@ -1953,17 +1887,13 @@
             "Tues 07:30",
             "Thurs 07:30",
             "Fri 07:30",
-            "Wed 08:00",
             "Thurs 08:00",
-            "Wed 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -2005,12 +1935,14 @@
     "Murray": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Validation",
+            "Theory/Cross",
             "Datacon"
         ],
         "occasional": [
             "Pspec",
+            "pyuvsim/pyradiosky",
             "pyuvdata"
         ],
         "available": [
@@ -2067,7 +1999,6 @@
         ]
     },
     "Morales": {
-        "convener": ["All-hands meeting"],
         "available": [
             "Tues 08:00",
             "Thurs 08:00",
@@ -2120,9 +2051,9 @@
         ]
     },
     "Jacobs": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Analog",
             "Commissioning",
             "Correlator",
@@ -2130,20 +2061,20 @@
         ],
         "occasional": [
             "Pspec",
+            "pyuvsim/pyradiosky",
             "pyuvdata",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
+            "Imaging",
             "Validation",
             "Datacon"
         ],
         "available": [
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Tues 09:00",
@@ -2181,35 +2112,34 @@
         ]
     },
     "Pober": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
+            "pyuvsim/pyradiosky",
             "pyuvdata",
-            "Machine learning",
+            "Imaging",
+            "Machine",
             "Datacon"
         ],
         "occasional": [
-            "Validation"
+            "Validation",
+            "Theory/Cross"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 10:00",
@@ -2235,48 +2165,43 @@
         ]
     },
     "Kittiwisit": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
-            "Analysis/Quality Metrics alternating",
+            "All-hands",
+            "Analysis/Quality",
             "Validation",
             "Datacon"
         ],
         "occasional": [
             "Pspec",
             "Commissioning",
-            "Machine learning",
+            "Machine",
+            "Theory/Cross",
             "Instrument"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -2295,9 +2220,9 @@
         "convener": [],
         "regular": [],
         "occasional": [
-            "All-hands meeting",
+            "All-hands",
             "pyuvdata",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
             "Datacon"
         ],
         "available": [
@@ -2344,9 +2269,9 @@
         ]
     },
     "Bowman": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands"
         ],
         "occasional": [],
         "available": [
@@ -2389,40 +2314,35 @@
         ]
     },
     "Mesinger": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands",
+            "Theory/Cross"
         ],
         "occasional": [],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -2433,9 +2353,9 @@
         ]
     },
     "Bull": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec"
         ],
         "occasional": [
@@ -2459,12 +2379,10 @@
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 10:00",
@@ -2483,37 +2401,33 @@
         "convener": [],
         "regular": [],
         "occasional": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
+            "Imaging",
+            "Theory/Cross",
             "Instrument",
             "Datacon"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00",
             "Mon 09:30",
             "Tues 09:30",
-            "Wed 09:30",
             "Thurs 09:30",
             "Fri 09:30",
             "Mon 18:00",
@@ -2524,17 +2438,17 @@
     },
     "Heimersheim": {
         "convener": [],
-        "regular": [],
+        "regular": [
+            "Theory/Cross"
+        ],
         "occasional": [],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Tues 08:00",
@@ -2562,37 +2476,32 @@
     "Keller": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Datacon"
         ],
         "occasional": [
             "Commissioning",
-            "Analysis/Quality Metrics alternating"
+            "Analysis/Quality"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00"
         ]
@@ -2601,73 +2510,64 @@
         "convener": [],
         "regular": [],
         "occasional": [
-            "All-hands meeting",
+            "All-hands",
             "Commissioning",
             "Site"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00"
         ]
     },
     "Bernardi": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
             "Datacon"
         ],
         "occasional": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
             "Commissioning",
             "Validation",
-            "Machine learning",
+            "Machine",
+            "Theory/Cross",
             "Instrument"
         ],
         "available": [
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Fri 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00",
             "Fri 09:00"
         ]
@@ -2675,19 +2575,22 @@
     "Wang": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
-            "Machine learning"
+            "All-hands",
+            "Machine"
         ],
         "occasional": [
             "Analog",
             "Pspec",
+            "pyuvsim/pyradiosky",
             "Commissioning",
             "Correlator",
             "Site",
             "pyuvdata",
             "NRAO",
-            "Analysis/Quality Metrics alternating",
+            "Analysis/Quality",
+            "Imaging",
             "Validation",
+            "Theory/Cross",
             "Instrument",
             "Software",
             "Datacon"
@@ -2695,50 +2598,43 @@
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30",
             "Mon 09:00",
             "Tues 09:00",
-            "Wed 09:00",
             "Thurs 09:00"
         ]
     },
     "Ma": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting"
+            "All-hands"
         ],
         "occasional": [
-            "Pspec"
+            "Pspec",
+            "pyuvsim/pyradiosky",
+            "Theory/Cross"
         ],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Mon 08:30",
             "Tues 08:30",
-            "Wed 08:30",
             "Thurs 08:30"
         ]
     },
@@ -2746,47 +2642,42 @@
         "available": [
             "Mon 07:00",
             "Tues 07:00",
-            "Wed 07:00",
             "Thurs 07:00",
             "Fri 07:00",
             "Mon 07:30",
             "Tues 07:30",
-            "Wed 07:30",
             "Thurs 07:30",
             "Fri 07:30",
             "Mon 08:00",
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Fri 08:00"
         ]
     },
     "deLeraAcedo": {
-        "convener": ["All-hands meeting"],
+        "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Instrument"
         ],
         "occasional": [
             "Validation",
+            "Theory/Cross",
             "Datacon"
         ],
         "available": [
             "Tues 08:00",
-            "Wed 08:00",
             "Thurs 08:00",
             "Tues 08:30",
-            "Wed 08:30",
-            "Thurs 08:30",
-            "Wed 09:00",
-            "Wed 09:30"
+            "Thurs 08:30"
         ]
     },
     "Sithapersad": {
         "convener": [],
         "regular": [],
         "occasional": [
-            "All-hands meeting"
+            "All-hands",
+            "Theory/Cross"
         ],
         "available": [
             "Tues 07:00"
@@ -2798,7 +2689,7 @@
             "Instrument"
         ],
         "occasional": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
             "Commissioning"
         ]
@@ -2813,7 +2704,7 @@
     "Kim": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Instrument"
         ],
         "occasional": []
@@ -2828,11 +2719,12 @@
     "Garsden": {
         "convener": [],
         "regular": [
-            "All-hands meeting",
+            "All-hands",
             "Pspec",
             "Validation"
         ],
         "occasional": [
+            "pyuvsim/pyradiosky",
             "Datacon"
         ]
     }
