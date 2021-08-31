@@ -139,7 +139,7 @@
         ]
     },
     "DeBoer": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Analog",
@@ -599,7 +599,7 @@
         ]
     },
     "Dillon": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Pspec",
@@ -712,7 +712,7 @@
         ]
     },
     "Hewitt": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Commissioning",
@@ -1025,7 +1025,7 @@
         ]
     },
     "LaPlante": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Correlator",
@@ -1121,7 +1121,7 @@
         ]
     },
     "Hazelton": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Analog",
@@ -1308,7 +1308,7 @@
         ]
     },
     "Liu": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Pspec",
@@ -1576,6 +1576,7 @@
         ]
     },
     "Parsons": {
+        "convener": ["All-hands meeting"],
         "available": [
             "Mon 09:00",
             "Tues 09:00",
@@ -1728,7 +1729,7 @@
         ]
     },
     "Santos": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting"
         ],
@@ -1802,7 +1803,7 @@
         ]
     },
     "Aguirre": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "NRAO",
@@ -1874,7 +1875,7 @@
         ]
     },
     "Furlanetto": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting"
         ],
@@ -2066,6 +2067,7 @@
         ]
     },
     "Morales": {
+        "convener": ["All-hands meeting"],
         "available": [
             "Tues 08:00",
             "Thurs 08:00",
@@ -2118,7 +2120,7 @@
         ]
     },
     "Jacobs": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Analog",
@@ -2179,7 +2181,7 @@
         ]
     },
     "Pober": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "pyuvdata",
@@ -2233,7 +2235,7 @@
         ]
     },
     "Kittiwisit": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Analysis/Quality Metrics alternating",
@@ -2342,7 +2344,7 @@
         ]
     },
     "Bowman": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting"
         ],
@@ -2387,7 +2389,7 @@
         ]
     },
     "Mesinger": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting"
         ],
@@ -2431,7 +2433,7 @@
         ]
     },
     "Bull": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Pspec"
@@ -2632,7 +2634,7 @@
         ]
     },
     "Bernardi": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "Datacon"
         ],
@@ -2714,7 +2716,7 @@
         ]
     },
     "Ma": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting"
         ],
@@ -2760,7 +2762,7 @@
         ]
     },
     "deLeraAcedo": {
-        "convener": [],
+        "convener": ["All-hands meeting"],
         "regular": [
             "All-hands meeting",
             "Instrument"

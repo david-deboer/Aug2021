@@ -1,90 +1,128 @@
 {
     "meetings":
     {
-        "All-hands meeting":
+        "All-hands":
         {
+            "Name": "All-hands meeting",
+            "Cadence": "weekly",
             "Convener": "DDB",
             "20-21": "Thurs 8am",
             "21-22": ""
         },
         "Analog":
         {
-            "20-21": "",
+            "Name": "Analog",
+            "Cadence": "biweekly",
+            "Convener": "NRG",
+            "20-21": "Mon 8am",
             "21-22": ""
         },
         "Instrument":
         {
-            "20-21": "",
+            "Name": "Instrument modelling",
+            "Cadence": "biweekly",
+            "20-21": "Wed 8am",
             "21-22": ""
         },
         "Pspec":
         {
-            "20-21": "",
+            "Name": "Pspec",
+            "Cadence": "weekly",
+            "Convener": "ACL",
+            "20-21": "Tues 2pm",
             "21-22": ""
         },
-        "pyuvsim/pyradiosky alternating":
+        "pyuvsim/pyradiosky":
         {
-            "20-21": "",
+            "Name": "pyuvsim/pyradiosky alternating",
+            "Cadence": "weekly",
+            "20-21": "Tues 8am",
             "21-22": ""
         },
         "Commissioning":
         {
-            "20-21": "",
+            "Name": "Commissioning",
+            "Cadence": "weekly",
+            "Convener": "DCJ",
+            "20-21": "Tues 9am",
             "21-22": ""
         },
         "Correlator":
         {
-            "20-21": "",
+            "Name": "Correlator",
+            "Cadence": "weekly",
+            "20-21": "Wed 11am",
             "21-22": ""
         },
         "Site":
         {
-            "20-21": "",
+            "Name": "Site/Logistics",
+            "Cadence": "weekly",
+            "Convener": "DDB",
+            "20-21": "Tues 8am",
             "21-22": ""
         },
         "pyuvdata":
         {
-            "20-21": "",
+            "Name": "pyuvdata",
+            "Cadence": "weekly",
+            "20-21": "Wed 8am",
             "21-22": ""
         },
         "NRAO":
         {
-            "20-21": "",
+            "Name": "NRAO",
+            "Cadence": "biweekly",
+            "20-21": "Thurs 2pm",
             "21-22": ""
         },
-        "Analysis/Quality Metrics alternating":
+        "Analysis/Quality":
         {
-            "20-21": "",
+            "Name": "Analysis/Quality Metrics alternating",
+            "Cadence": "weekly",
+            "20-21": "Wed 9am",
             "21-22": ""
         },
-        "Imaging (biweekly)":
+        "Imaging":
         {
-            "20-21": "",
+            "Name": "Imaging",
+            "Cadence": "biweeklyl",
+            "20-21": "Tues 10:30am",
             "21-22": ""
         },
         "Validation":
         {
+            "Name": "Validation",
+            "Cadence": "weekly",
+            "20-21": "Thurs 10am",
+            "21-22": ""
+        },
+        "Machine":
+        {
+            "Name": "Machine learning",
+            "Cadence": "biweekly",
             "20-21": "",
             "21-22": ""
         },
-        "Machine learning":
+        "Theory/Cross":
         {
-            "20-21": "",
-            "21-22": ""
-        },
-        "Theory Meets Data/Cross-correlation alternating":
-        {
-            "20-21": "",
+            "Name": "Theory Meets Data/Cross-correlation alternating",
+            "Cadence": "weekly",
+            "20-21": "Tues 10am",
             "21-22": ""
         },
         "Software":
         {
-            "20-21": "",
+            "Name": "Software",
+            "Cadence": "weekly",
+            "20-21": "Tues 12pm",
             "21-22": ""
         },
         "Datacon":
         {
-            "20-21": "",
+            "Name": "Datacon",
+            "Cadence": "weekly",
+            "20-21": "Wed 12pm",
             "21-22": ""
         }
     },
