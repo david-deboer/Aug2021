@@ -1,4 +1,143 @@
 {
+    "Storer": {
+        "convener": [],
+        "regular": [
+            "Analog",
+            "Commissioning",
+            "Analysis/Quality Metrics alternating",
+            "Datacon"
+        ],
+        "occasional": [
+            "All-hands meeting"
+        ],
+        "available": [
+            "Mon 08:00",
+            "Tues 08:00",
+            "Wed 08:00",
+            "Thurs 08:00",
+            "Fri 08:00",
+            "Mon 08:30",
+            "Tues 08:30",
+            "Wed 08:30",
+            "Thurs 08:30",
+            "Fri 08:30",
+            "Mon 09:00",
+            "Tues 09:00",
+            "Wed 09:00",
+            "Thurs 09:00",
+            "Fri 09:00",
+            "Mon 09:30",
+            "Tues 09:30",
+            "Wed 09:30",
+            "Thurs 09:30",
+            "Fri 09:30",
+            "Mon 10:00",
+            "Tues 10:00",
+            "Wed 10:00",
+            "Thurs 10:00",
+            "Fri 10:00",
+            "Mon 10:30",
+            "Wed 10:30",
+            "Thurs 10:30",
+            "Fri 10:30",
+            "Mon 11:00",
+            "Wed 11:00",
+            "Fri 11:00",
+            "Mon 11:30",
+            "Tues 11:30",
+            "Wed 11:30",
+            "Fri 11:30",
+            "Mon 12:00",
+            "Tues 12:00",
+            "Wed 12:00",
+            "Mon 12:30",
+            "Tues 12:30",
+            "Wed 12:30",
+            "Tues 13:00",
+            "Wed 13:00",
+            "Tues 13:30",
+            "Wed 13:30",
+            "Fri 13:30",
+            "Tues 14:00",
+            "Thurs 14:00",
+            "Fri 14:00",
+            "Tues 14:30",
+            "Thurs 14:30",
+            "Tues 15:00",
+            "Thurs 15:00",
+            "Mon 15:30",
+            "Thurs 15:30",
+            "Mon 16:00",
+            "Wed 16:00",
+            "Mon 16:30",
+            "Tues 16:30",
+            "Wed 16:30"
+        ]
+    },
+    "Ewall-Wice": {
+        "available": [
+            "Mon 09:00",
+            "Tues 09:00",
+            "Wed 09:00",
+            "Thurs 09:00",
+            "Mon 09:30",
+            "Tues 09:30",
+            "Wed 09:30",
+            "Thurs 09:30",
+            "Mon 10:00",
+            "Tues 10:00",
+            "Wed 10:00",
+            "Thurs 10:00",
+            "Mon 10:30",
+            "Tues 10:30",
+            "Wed 10:30",
+            "Thurs 10:30",
+            "Mon 11:00",
+            "Tues 11:00",
+            "Wed 11:00",
+            "Thurs 11:00",
+            "Mon 11:30",
+            "Wed 11:30",
+            "Thurs 11:30",
+            "Mon 12:00",
+            "Wed 12:00",
+            "Thurs 12:00",
+            "Mon 12:30",
+            "Wed 12:30",
+            "Thurs 12:30",
+            "Mon 13:00",
+            "Tues 13:00",
+            "Wed 13:00",
+            "Thurs 13:00",
+            "Mon 13:30",
+            "Tues 13:30",
+            "Wed 13:30",
+            "Thurs 13:30",
+            "Mon 14:00",
+            "Tues 14:00",
+            "Wed 14:00",
+            "Mon 14:30",
+            "Tues 14:30",
+            "Wed 14:30",
+            "Tues 15:00",
+            "Wed 15:00",
+            "Tues 15:30",
+            "Wed 15:30",
+            "Thurs 15:30",
+            "Mon 16:00",
+            "Tues 16:00",
+            "Wed 16:00",
+            "Thurs 16:00",
+            "Mon 16:30",
+            "Tues 16:30",
+            "Wed 16:30",
+            "Thurs 16:30",
+            "Mon 17:00",
+            "Tues 17:00",
+            "Wed 17:00",
+            "Thurs 17:00"
+        ]
+    },
     "DeBoer": {
         "convener": [],
         "regular": [
@@ -81,9 +220,7 @@
             "Wed 13:30",
             "Thurs 13:30",
             "Fri 13:30",
-            "Mon 14:00",
             "Tues 14:00",
-            "Wed 14:00",
             "Thurs 14:00",
             "Fri 14:00",
             "Tues 14:30",
@@ -91,7 +228,6 @@
             "Fri 14:30",
             "Tues 15:00",
             "Wed 15:00",
-            "Thurs 15:00",
             "Fri 15:00",
             "Tues 15:30",
             "Wed 15:30",
@@ -226,7 +362,6 @@
             "Tues 17:00",
             "Wed 17:00",
             "Thurs 17:00",
-            "Fri 17:00",
             "Mon 17:30",
             "Tues 17:30",
             "Wed 17:30",
@@ -296,7 +431,6 @@
             "Thurs 12:30",
             "Fri 12:30",
             "Tues 13:00",
-            "Wed 13:00",
             "Thurs 13:00",
             "Fri 13:00",
             "Tues 13:30",
@@ -525,8 +659,6 @@
             "Tues 12:30",
             "Wed 12:30",
             "Fri 12:30",
-            "Mon 13:00",
-            "Tues 13:00",
             "Wed 13:00",
             "Fri 13:00",
             "Wed 13:30",
@@ -547,7 +679,6 @@
             "Mon 15:30",
             "Tues 15:30",
             "Wed 15:30",
-            "Thurs 15:30",
             "Fri 15:30",
             "Mon 16:00",
             "Tues 16:00",
@@ -642,7 +773,6 @@
             "Thurs 12:30",
             "Fri 12:30",
             "Mon 13:00",
-            "Tues 13:00",
             "Wed 13:00",
             "Thurs 13:00",
             "Fri 13:00",
@@ -689,12 +819,7 @@
             "Tues 17:30",
             "Wed 17:30",
             "Thurs 17:30",
-            "Fri 17:30",
-            "Mon 18:00",
-            "Tues 18:00",
-            "Wed 18:00",
-            "Thurs 18:00",
-            "Fri 18:00"
+            "Fri 17:30"
         ]
     },
     "Sims": {
@@ -749,10 +874,8 @@
             "Fri 12:00",
             "Mon 12:30",
             "Tues 12:30",
-            "Wed 12:30",
             "Thurs 12:30",
             "Fri 12:30",
-            "Mon 13:00",
             "Tues 13:00",
             "Thurs 13:00",
             "Fri 13:00",
@@ -794,12 +917,7 @@
             "Tues 17:30",
             "Wed 17:30",
             "Thurs 17:30",
-            "Fri 17:30",
-            "Mon 18:00",
-            "Tues 18:00",
-            "Wed 18:00",
-            "Thurs 18:00",
-            "Fri 18:00"
+            "Fri 17:30"
         ]
     },
     "Kolopanis": {
@@ -868,7 +986,6 @@
             "Wed 12:30",
             "Thurs 12:30",
             "Mon 13:00",
-            "Tues 13:00",
             "Wed 13:00",
             "Thurs 13:00",
             "Mon 13:30",
@@ -886,7 +1003,6 @@
             "Thurs 15:00",
             "Mon 15:30",
             "Tues 15:30",
-            "Wed 15:30",
             "Thurs 15:30",
             "Mon 16:00",
             "Tues 16:00",
@@ -966,8 +1082,6 @@
             "Thurs 12:30",
             "Fri 12:30",
             "Mon 13:00",
-            "Tues 13:00",
-            "Wed 13:00",
             "Thurs 13:00",
             "Fri 13:00",
             "Mon 13:30",
@@ -987,11 +1101,9 @@
             "Tues 15:00",
             "Wed 15:00",
             "Thurs 15:00",
-            "Fri 15:00",
             "Mon 15:30",
             "Tues 15:30",
             "Wed 15:30",
-            "Thurs 15:30",
             "Mon 16:00",
             "Tues 16:00",
             "Wed 16:00",
@@ -1005,11 +1117,7 @@
             "Mon 17:30",
             "Tues 17:30",
             "Wed 17:30",
-            "Thurs 17:30",
-            "Mon 18:00",
-            "Tues 18:00",
-            "Wed 18:00",
-            "Thurs 18:00"
+            "Thurs 17:30"
         ]
     },
     "Hazelton": {
@@ -1075,7 +1183,6 @@
             "Wed 12:30",
             "Thurs 12:30",
             "Fri 12:30",
-            "Mon 13:00",
             "Tues 13:00",
             "Wed 13:00",
             "Thurs 13:00",
@@ -1107,11 +1214,7 @@
             "Tues 16:30",
             "Wed 16:30",
             "Thurs 16:30",
-            "Fri 16:30",
-            "Tues 17:00",
-            "Wed 17:00",
-            "Thurs 17:00",
-            "Fri 17:00"
+            "Fri 16:30"
         ]
     },
     "Burba": {
@@ -1201,12 +1304,7 @@
             "Tues 14:30",
             "Wed 14:30",
             "Thurs 14:30",
-            "Fri 14:30",
-            "Mon 15:00",
-            "Tues 15:00",
-            "Wed 15:00",
-            "Thurs 15:00",
-            "Fri 15:00"
+            "Fri 14:30"
         ]
     },
     "Liu": {
@@ -1274,8 +1372,6 @@
             "Thurs 14:30",
             "Mon 15:00",
             "Tues 15:00",
-            "Wed 15:00",
-            "Thurs 15:00",
             "Fri 15:00",
             "Mon 15:30",
             "Tues 15:30",
@@ -1389,12 +1485,7 @@
             "Tues 14:00",
             "Wed 14:00",
             "Thurs 14:00",
-            "Fri 14:00",
-            "Mon 14:30",
-            "Tues 14:30",
-            "Wed 14:30",
-            "Thurs 14:30",
-            "Fri 14:30"
+            "Fri 14:00"
         ]
     },
     "Xu": {
@@ -1458,13 +1549,10 @@
             "Wed 12:30",
             "Thurs 12:30",
             "Fri 12:30",
-            "Mon 13:00",
             "Tues 13:00",
             "Wed 13:00",
-            "Thurs 13:00",
             "Fri 13:00",
             "Tues 13:30",
-            "Wed 13:30",
             "Fri 13:30",
             "Mon 14:00",
             "Tues 14:00",
@@ -1484,18 +1572,10 @@
             "Tues 15:30",
             "Wed 15:30",
             "Thurs 15:30",
-            "Fri 15:30",
-            "Mon 16:00",
-            "Tues 16:00",
-            "Wed 16:00",
-            "Thurs 16:00",
-            "Fri 16:00"
+            "Fri 15:30"
         ]
     },
     "Parsons": {
-        "convener": [],
-        "regular": [],
-        "occasional": [],
         "available": [
             "Mon 09:00",
             "Tues 09:00",
@@ -1529,7 +1609,6 @@
             "Mon 12:30",
             "Wed 12:30",
             "Fri 12:30",
-            "Mon 13:00",
             "Tues 13:00",
             "Wed 13:00",
             "Fri 13:00",
@@ -1554,7 +1633,6 @@
             "Mon 15:30",
             "Tues 15:30",
             "Wed 15:30",
-            "Thurs 15:30",
             "Fri 15:30",
             "Mon 16:00",
             "Tues 16:00",
@@ -1569,12 +1647,7 @@
             "Tues 17:00",
             "Wed 17:00",
             "Thurs 17:00",
-            "Fri 17:00",
-            "Mon 17:30",
-            "Tues 17:30",
-            "Wed 17:30",
-            "Thurs 17:30",
-            "Fri 17:30"
+            "Fri 17:00"
         ]
     },
     "Gorce": {
@@ -1636,7 +1709,6 @@
             "Wed 12:00",
             "Thurs 12:00",
             "Mon 12:30",
-            "Tues 12:30",
             "Wed 12:30",
             "Thurs 12:30",
             "Mon 13:00",
@@ -1649,15 +1721,10 @@
             "Mon 14:00",
             "Tues 14:00",
             "Wed 14:00",
-            "Thurs 14:00",
             "Mon 14:30",
             "Tues 14:30",
             "Wed 14:30",
-            "Thurs 14:30",
-            "Mon 15:00",
-            "Tues 15:00",
-            "Wed 15:00",
-            "Thurs 15:00"
+            "Thurs 14:30"
         ]
     },
     "Santos": {
@@ -1731,12 +1798,7 @@
             "Tues 12:30",
             "Wed 12:30",
             "Thurs 12:30",
-            "Fri 12:30",
-            "Mon 13:00",
-            "Tues 13:00",
-            "Wed 13:00",
-            "Thurs 13:00",
-            "Fri 13:00"
+            "Fri 12:30"
         ]
     },
     "Aguirre": {
@@ -1800,20 +1862,15 @@
             "Mon 12:30",
             "Wed 12:30",
             "Fri 12:30",
-            "Mon 13:00",
             "Tues 13:00",
             "Wed 13:00",
             "Fri 13:00",
             "Tues 13:30",
-            "Wed 13:30",
             "Fri 13:30",
-            "Tues 14:00",
             "Wed 14:00",
             "Fri 14:00",
             "Wed 14:30",
-            "Fri 14:30",
-            "Wed 15:00",
-            "Fri 15:00"
+            "Fri 14:30"
         ]
     },
     "Furlanetto": {
@@ -1867,7 +1924,6 @@
             "Thurs 12:30",
             "Fri 12:30",
             "Tues 13:00",
-            "Wed 13:00",
             "Thurs 13:00",
             "Fri 13:00",
             "Tues 13:30",
@@ -1878,10 +1934,7 @@
             "Fri 14:00",
             "Tues 14:30",
             "Thurs 14:30",
-            "Fri 14:30",
-            "Tues 15:00",
-            "Thurs 15:00",
-            "Fri 15:00"
+            "Fri 14:30"
         ]
     },
     "Glendenning": {
@@ -1945,12 +1998,7 @@
             "Tues 15:30",
             "Wed 15:30",
             "Thurs 15:30",
-            "Fri 15:30",
-            "Mon 16:00",
-            "Tues 16:00",
-            "Wed 16:00",
-            "Thurs 16:00",
-            "Fri 16:00"
+            "Fri 15:30"
         ]
     },
     "Murray": {
@@ -1997,12 +2045,10 @@
             "Thurs 12:30",
             "Mon 13:00",
             "Tues 13:00",
-            "Wed 13:00",
             "Thurs 13:00",
             "Mon 13:30",
             "Tues 13:30",
             "Thurs 13:30",
-            "Mon 14:00",
             "Tues 14:00",
             "Wed 14:00",
             "Thurs 14:00",
@@ -2016,17 +2062,10 @@
             "Mon 15:30",
             "Tues 15:30",
             "Wed 15:30",
-            "Thurs 15:30",
-            "Mon 16:00",
-            "Tues 16:00",
-            "Wed 16:00",
-            "Thurs 16:00"
+            "Thurs 15:30"
         ]
     },
     "Morales": {
-        "convener": [],
-        "regular": [],
-        "occasional": [],
         "available": [
             "Tues 08:00",
             "Thurs 08:00",
@@ -2071,14 +2110,11 @@
             "Wed 15:00",
             "Thurs 15:00",
             "Tues 15:30",
-            "Wed 15:30",
             "Thurs 15:30",
             "Tues 16:00",
             "Thurs 16:00",
             "Tues 16:30",
-            "Thurs 16:30",
-            "Tues 17:00",
-            "Thurs 17:00"
+            "Thurs 16:30"
         ]
     },
     "Jacobs": {
@@ -2281,7 +2317,6 @@
             "Mon 12:00",
             "Wed 12:00",
             "Wed 12:30",
-            "Wed 13:00",
             "Mon 14:00",
             "Fri 14:00",
             "Mon 14:30",
@@ -2300,15 +2335,10 @@
             "Tues 16:00",
             "Wed 16:00",
             "Thurs 16:00",
-            "Fri 16:00",
             "Mon 16:30",
             "Tues 16:30",
             "Wed 16:30",
-            "Thurs 16:30",
-            "Mon 17:00",
-            "Tues 17:00",
-            "Wed 17:00",
-            "Thurs 17:00"
+            "Thurs 16:30"
         ]
     },
     "Bowman": {
@@ -2339,11 +2369,9 @@
             "Wed 14:00",
             "Thurs 14:00",
             "Wed 14:30",
-            "Thurs 14:30",
             "Tues 15:00",
             "Wed 15:00",
             "Tues 15:30",
-            "Wed 15:30",
             "Thurs 15:30",
             "Tues 16:00",
             "Thurs 16:00",
@@ -2355,10 +2383,7 @@
             "Thurs 17:00",
             "Tues 17:30",
             "Wed 17:30",
-            "Thurs 17:30",
-            "Tues 18:00",
-            "Wed 18:00",
-            "Thurs 18:00"
+            "Thurs 17:30"
         ]
     },
     "Mesinger": {
@@ -2716,9 +2741,6 @@
         ]
     },
     "Dai": {
-        "convener": [],
-        "regular": [],
-        "occasional": [],
         "available": [
             "Mon 07:00",
             "Tues 07:00",
@@ -2766,6 +2788,50 @@
         ],
         "available": [
             "Tues 07:00"
+        ]
+    },
+    "Nhan": {
+        "convener": [],
+        "regular": [
+            "Instrument"
+        ],
+        "occasional": [
+            "All-hands meeting",
+            "Pspec",
+            "Commissioning"
+        ]
+    },
+    "Robnett": {
+        "convener": [],
+        "regular": [
+            "NRAO"
+        ],
+        "occasional": []
+    },
+    "Kim": {
+        "convener": [],
+        "regular": [
+            "All-hands meeting",
+            "Instrument"
+        ],
+        "occasional": []
+    },
+    "Kocz": {
+        "convener": [],
+        "regular": [
+            "Correlator"
+        ],
+        "occasional": []
+    },
+    "Garsden": {
+        "convener": [],
+        "regular": [
+            "All-hands meeting",
+            "Pspec",
+            "Validation"
+        ],
+        "occasional": [
+            "Datacon"
         ]
     }
 }

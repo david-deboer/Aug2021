@@ -14,9 +14,12 @@ class MeetingPlanner:
             self.info = json.load(fp)
         with open(fnresponses, 'r') as fp:
             self.team = json.load(fp)
-        # Combine occasional = regular + occasional
-        for pn, info in self.team.items():
-            info['occasional'] += info['regular']
+        # Make sure all keys present and combine occasional = regular + occasional
+        for pn in self.team.keys():
+            self.team[pn].setdefault('available', [])
+            for grp in self.info['groups']:
+                self.team[pn].setdefault(grp, [])
+            self.team[pn]['occasional'] += self.team[pn]['regular']
 
         self.meetings = {}
         self.planner = {}
@@ -39,7 +42,7 @@ class MeetingPlanner:
         for person, mtg_info in self.team.items():
             for mtg in self.info['meetings']:
                 for grp in self.info['groups'].keys():
-                    if grp == 'all' or mtg in mtg_info[grp]:
+                    if mtg in mtg_info[grp]:
                         self.meetings[mtg][grp].append(person)
         for mtg in self.info['meetings']:
             for grp in self.info['groups'].keys():

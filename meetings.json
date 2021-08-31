@@ -92,7 +92,6 @@
     {
         "convener": "CONVENER-SELECTED (taken++ from googlesheet)",
         "regular": "SELF-SELECTED (taken from google form)",
-        "occasional": "  ",
-        "available": "ALL (all from whenisgood)"
+        "occasional": "SELF-SELECTED (taken from google form)"
     }
 }
