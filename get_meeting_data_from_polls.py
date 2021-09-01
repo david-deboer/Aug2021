@@ -2,19 +2,18 @@ import json
 import matplotlib.image as mpimg
 import pandas as pd
 from math import sqrt
+import os.path
 
 
-testing = "DeBoer"  # set to name to see result of that name
-clr_threshold = 0.05  # how close to the available color to be
-border_size = 0.4  # fractional size of border
+poll_wig = "polls/whenisgood.json"
+with open(poll_wig, 'r') as fp:
+    wig = json.load(fp)
 
 
 with open('meetings.json', 'r') as fp:
     meeting_info = json.load(fp)
 meetings = list(meeting_info['meetings'].keys())
 
-with open('polls/whenisgood.json', 'r') as fp:
-    wig = json.load(fp)
 
 # This is the self-select meeting attendence form
 selfpoll_file = pd.read_csv('polls/MeetingChangeQuery.csv')
@@ -64,26 +63,31 @@ for pn in selfpoll.keys():
 
 # # Step through grid in images
 for pn in responses.keys():  # pn is person name
-    if testing and pn != testing:
-        continue
     if pn not in wig['img'].keys():
         continue
-    if isinstance(wig['img'][pn], dict):  # Assumes all values defined.
-        data = wig['img'][pn]
-        fn = 'polls/' + wig['img'][pn]['file']
+    data = {}
+    for _k, _v in wig.items():
+        data[_k] = _v
+    if isinstance(wig['img'][pn], dict):
+        for _k, _v in wig['img'][pn].items():
+            data[_k] = _v
+        fn = os.path.join(data["poll_dir"], wig['img'][pn]['file'])
     else:
-        data = wig
-        fn = 'polls/' + wig['img'][pn]
+        fn = os.path.join(data["poll_dir"], wig['img'][pn])
+    if data["testing"] and pn != str(data["testing"]):
+        continue
+
     days = mkpixpts(data['days'], data['early_day'], data['day_size'], data['gap'])
     times = mkpixpts(data['times'], data['early_time'], data['time_size'], data['gap'])
-    border_day = int(border_size * data['day_size'] / 2.0)
-    border_time = int(border_size * data['time_size'] / 2.0)
+    border_day = int(data["border_size"] * data['day_size'] / 2.0)
+    border_time = int(data["border_size"] * data['time_size'] / 2.0)
     responses[pn]['available'] = []
 
     img = mpimg.imread(fn)
-    if testing:
-        import numpy as np
-        test_img = np.zeros(np.shape(img)[0:2])
+    if data["testing"]:
+        # import numpy as np
+        # test_img = np.zeros(np.shape(img)[0:2])
+        test_img = img
         print(f"\nUsing {pn}")
         print("          ", end=' ')
         for dy in data['days']:
@@ -92,7 +96,7 @@ for pn in responses.keys():  # pn is person name
 
     for this_time in data['times']:
         tpix = times[this_time]
-        if testing:
+        if data["testing"]:
             print(f"{this_time:10s}", end=' ')
         for this_day in data['days']:
             dpix = days[this_day]
@@ -101,25 +105,31 @@ for pn in responses.keys():  # pn is person name
                     dval = dpix + _x
                     tval = tpix + _y
                     clr = img[tval, dval]
-                    is_available = clrdist(clr, data['color']) < clr_threshold
+                    is_available = clrdist(clr, data['color']) < data["clr_threshold"]
                     if is_available:
                         break
-            if testing:
+            if data["testing"]:
                 for _y in range(border_time, data['time_size']-border_time):
                     for _x in range(border_day, data['day_size']-border_day):
                         dval = dpix + _x
                         tval = tpix + _y
-                        test_img[tval, dval] = int(is_available)
+                        # test_img[tval, dval] = int(is_available)
+                        if is_available:
+                            test_img[tval, dval] = [0, 1, 0, 1]
+                        else:
+                            test_img[tval, dval] = [1, 0, 0, 1]
                 print("{:10s}".format(str(is_available)), end=' ')
                 # print("{:.6f} {}  {}".format(td, dcmin, this_clr), end='')
             if is_available:
                 responses[pn]['available'].append("{} {}".format(this_day, this_time))
-        if testing:
+        if data["testing"]:
             print()
 
-    if testing:
-        import subprocess
-        subprocess.call(f'open "{fn}"', shell=True)
+    if data["testing"]:
+        # import subprocess
+        # subprocess.call(f'open "{fn}"', shell=True)
+        import matplotlib.pyplot as plt
+        plt.imshow(test_img)
     else:
         with open('full_responses.json', 'w') as fp:
             json.dump(responses, fp, indent=4)
